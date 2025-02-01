@@ -6,11 +6,17 @@ export const HeaderCustom = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 32px;
 
   background-color: #24053e;
+
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 32px;
+  }
 
   & > button {
     font-family: "manrope";
