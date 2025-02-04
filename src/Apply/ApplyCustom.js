@@ -6,6 +6,15 @@ export const ApplyContainer = styled.div`
   padding-top: 329px;
   padding-left: 16px;
   padding-right: 16px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    padding-right: 40px;
+    padding-left: 0;
+  }
 `;
 
 export const ContentCon = styled.div`
@@ -41,6 +50,12 @@ export const ContentCon = styled.div`
 
   background-color: #24053e;
   color: #fff;
+
+  @media (min-width: 768px) {
+    width: 514px;
+
+    text-align: left;
+  }
 
   & > h3 {
     margin-bottom: 16px;

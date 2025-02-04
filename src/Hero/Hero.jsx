@@ -3,6 +3,8 @@ import * as SC from "./HeroCustom";
 import phoneMob from "../assets/pics/image-hero.webp";
 
 const Hero = () => {
+
+
   return (
     <SC.HeroCustom>
       <h3>

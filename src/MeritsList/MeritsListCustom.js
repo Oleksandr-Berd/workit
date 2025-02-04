@@ -10,17 +10,35 @@ export const MeritsListCustom = styled.ul`
 
   background-color: #fcf8ff;
 
+  @media (min-width: 768px) {
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 203px;
+    padding-bottom: 104px;
+
+    text-align: left;
+
+    & li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   & > li:not(:last-child) {
     margin-bottom: 40px;
   }
 
-  & div {
-    width: 48px;
-    height: 46px;
+  & div:first-child {
+      min-width: 48px;
+      height: 46px;
 
     display: inline-block;
 
     align-content: center;
+
+    text-align: center;
 
     margin-bottom: 24px;
 
@@ -31,6 +49,11 @@ export const MeritsListCustom = styled.ul`
 
     border: 1px solid #584d62;
     border-radius: 50%;
+
+    @media (min-width: 768px){
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
   }
 
   & h4 {

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import bckImage from "../assets/pics/bg-pattern-3.svg";
+import bckImage2 from "../assets/pics/bg-pattern-2.svg";
+
 
 export const HeroCustom = styled.div`
   position: relative;
@@ -20,6 +22,38 @@ export const HeroCustom = styled.div`
   color: #fff;
   background-color: #24053e;
 
+  @media (min-width: 768px) {
+    padding-left: 97px;
+    padding-right: 97px;
+    padding-top: 56px;
+    padding-bottom: 204px;
+
+    font-size: 60px;
+    line-height: 1;
+
+    &::before {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      transform: translateX(-130px) translateY(50%);
+
+      content: url(${bckImage});
+    }
+
+    &::after {
+      position: absolute;
+
+      top: 0;
+      right: 0;
+
+      transform: translateX(97px) translateY(100%);
+
+      content: url(${bckImage2});
+    }
+  }
+
   & span {
     border-bottom: 3px solid #44ffa1;
   }
@@ -32,6 +66,12 @@ export const HeroCustom = styled.div`
     transform: translateY(50%) translateX(36px);
 
     width: 320px;
+
+    @media (min-width: 728px) {
+      width: 514px;
+
+      transform: translateY(50%) translateX(151px);
+    }
   }
 
   & > button {
